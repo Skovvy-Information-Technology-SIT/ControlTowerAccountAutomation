@@ -2,6 +2,9 @@
 
 This solution automates the deployment of security services and the creation of **VPC Flow Logs** in newly created AWS accounts managed by **AWS Control Tower**. The solution uses **AWS CloudFormation**, **Lambda**, and **Amazon EventBridge** to automatically provision security services such as **Security Hub**, **GuardDuty**, **AWS Config**, **Inspector**, **CloudWatch Alarms**, and **VPC Flow Logs** when a new account is created in Control Tower.
 
+The core infrastructure for automating this solution is built using **AWS CloudFormation CloudFormation Templates (CfCT)**, providing a scalable and repeatable way to deploy these resources.
+
+
 ![image](https://github.com/user-attachments/assets/9ee08140-173b-479f-8c70-457c4ee87f62)
 
 
@@ -136,4 +139,4 @@ CloudFormation Logs: Check the CloudFormation stack events in the AWS Console to
 VPC Flow Logs: Logs will be available in the CloudWatch log group (/aws/vpc/flowlogs/{account_id}).
 
 ## Summary
-This solution provides automated security configuration for new AWS Control Tower accounts. Upon creation of an account, the solution deploys security services (Security Hub, GuardDuty, etc.) and enables VPC Flow Logs for network monitoring. This solution uses CloudFormation, Lambda, and EventBridge for seamless automation.
+This solution provides automated security configuration for new AWS Control Tower accounts. Upon creation of an account, the solution deploys security services (Security Hub, GuardDuty, etc.) and enables VPC Flow Logs for network monitoring. The solution is built using AWS CloudFormation (CfCT), Lambda, and EventBridge for seamless automation.
